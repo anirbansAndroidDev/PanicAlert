@@ -36,7 +36,7 @@ public class ReuseableClass {
     //--------------------------------------------
     // method to save variable in preference
     //--------------------------------------------
-    public static void saveInPreference(String name, String content, Activity myActivity) {
+    public static void saveInPreference(String name, String content, Context myActivity) {
         SharedPreferences preferences = PreferenceManager
                 .getDefaultSharedPreferences(myActivity);
         SharedPreferences.Editor editor = preferences.edit();
@@ -47,7 +47,7 @@ public class ReuseableClass {
     //--------------------------------------------
     // getting content from preferences
     //--------------------------------------------
-    public static String getFromPreference(String variable_name, Activity myActivity) {
+    public static String getFromPreference(String variable_name, Context myActivity) {
         String preference_return;
         SharedPreferences preferences = PreferenceManager
                 .getDefaultSharedPreferences(myActivity);

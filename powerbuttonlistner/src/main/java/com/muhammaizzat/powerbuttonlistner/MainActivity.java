@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
     int PowerButtonPressedCount = 0;
     private BroadcastReceiver mPowerKeyReceiver = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

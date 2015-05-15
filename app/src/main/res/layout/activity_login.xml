@@ -31,9 +31,9 @@
             <EditText
                 android:id="@+id/userName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:background="@android:color/transparent"
-                android:hint="Username"
+                android:hint="@string/username_hint"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp" />
         </LinearLayout>
@@ -56,9 +56,9 @@
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:background="@android:color/transparent"
-                android:hint="Password"
+                android:hint="@string/password_hint"
                 android:inputType="textPassword"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp" />
@@ -67,15 +67,14 @@
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="fill_parent"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_marginTop="10dp"
-            android:background="@color/button_color"
+            android:background="@color/blue_button"
             android:onClick="login"
             android:padding="5dp"
             android:text="Login"
             android:textColor="@android:color/white"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/TextViewRegister"

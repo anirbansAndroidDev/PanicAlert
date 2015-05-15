@@ -7,18 +7,41 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-
     tools:context="com.muhammaizzat.panicalert.PoliceActivity">
 
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/alert_lists"
+        android:textColor="@color/text_color"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/TextViewNoData"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/no_data_found"
+        android:textColor="@color/red_text_colour"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
 
     <ListView
         android:id="@+id/myListView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="20dp"
         android:divider="@color/list_divider"
         android:dividerHeight="1dp"
         android:listSelector="@drawable/list_row_selector"></ListView>
-
 </RelativeLayout>

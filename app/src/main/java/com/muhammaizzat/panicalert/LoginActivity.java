@@ -114,11 +114,16 @@ public class LoginActivity extends Activity {
 
         protected void onPostExecute(String result) {
             Log.d("TAG", "value: " + result);
-            if (result.contains("user_id")) {
-                ReuseableClass.saveInPreference("user_id", result.replace("user_id", ""), LoginActivity.this);
+            if (result.contains("user_info")) {
 
-                Log.d("TAG", "user id: " + ReuseableClass.getFromPreference("user_id", LoginActivity.this));
+                String[] name_mobile = result.replace("user_info", "").split("@#@");
 
+                ReuseableClass.saveInPreference("name", name_mobile[0], LoginActivity.this);
+                ReuseableClass.saveInPreference("mobile_no", name_mobile[1], LoginActivity.this);
+
+                Log.d("TAG", "name: " + ReuseableClass.getFromPreference("name", LoginActivity.this) + " mobile no: " + ReuseableClass.getFromPreference("mobile_no", LoginActivity.this));
+
+                //Opening Normal User Activity
                 Intent i = new Intent(LoginActivity.this, NormalUserActivity.class);
                 startActivity(i);
                 finish();
