@@ -60,7 +60,7 @@ public class LoginActivity extends Activity {
         if ((usernameValue.equalsIgnoreCase("police1") && passwordValue.equalsIgnoreCase("police123")) ||
                 (usernameValue.equalsIgnoreCase("police2") && passwordValue.equalsIgnoreCase("police123")) ||
                 (usernameValue.equalsIgnoreCase("police3") && passwordValue.equalsIgnoreCase("police123"))) {
-            Log.d("TAG", "Police");
+            Log.d("TAG", "Opening Police Activity");
 
             Intent myIntent = new Intent(this, PoliceActivity.class);
             finish();
