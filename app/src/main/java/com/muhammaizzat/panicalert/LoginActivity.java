@@ -57,9 +57,9 @@ public class LoginActivity extends Activity {
         //Login  Button Click
         String usernameValue = userName.getText().toString();
         String passwordValue = password.getText().toString();
-        if ((usernameValue.equalsIgnoreCase("police1") || passwordValue.equalsIgnoreCase("police123")) ||
-                (usernameValue.equalsIgnoreCase("police2") || passwordValue.equalsIgnoreCase("police123")) ||
-                (usernameValue.equalsIgnoreCase("police3") || passwordValue.equalsIgnoreCase("police123"))) {
+        if ((usernameValue.equalsIgnoreCase("police1") && passwordValue.equalsIgnoreCase("police123")) ||
+                (usernameValue.equalsIgnoreCase("police2") && passwordValue.equalsIgnoreCase("police123")) ||
+                (usernameValue.equalsIgnoreCase("police3") && passwordValue.equalsIgnoreCase("police123"))) {
             Log.d("TAG", "Police");
 
             Intent myIntent = new Intent(this, PoliceActivity.class);
