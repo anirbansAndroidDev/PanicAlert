@@ -10,7 +10,7 @@ import android.preference.PreferenceManager;
 
 public class ReuseableClass {
 
-    public static String baseUrl = "http://bumba27.byethost16.com/";
+    public static String baseUrl = "http://panicalert.byethost13.com/";
 
     public static Typeface getFontStyle(Context c) {
         return Typeface.createFromAsset(c.getAssets(), "fonts/gothic.ttf");
